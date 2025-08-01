@@ -10,3 +10,9 @@ app.post('/api/create-checkout-session', async (req, res) => {
   });
   res.json({ url: session.url });
 });
+{
+  username: String,
+  email: String,
+  password: String (hashed),
+  projects: [projectId]
+}
